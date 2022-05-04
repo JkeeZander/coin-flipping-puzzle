@@ -1,6 +1,7 @@
 package coins.state;
 
 import org.apache.commons.math3.util.Combinations;
+import org.apache.commons.math3.util.CombinatoricsUtils;
 
 import java.util.*;
 
@@ -189,6 +190,9 @@ public class Coins implements Cloneable {
         var coins = new Coins(7, 3);
         System.out.println(coins);
         System.out.println(coins.getFlips());
+
+
+        System.out.println(CombinatoricsUtils.binomialCoefficient(7,3)); //Usage of binomialCoefficient
     }
 
 }

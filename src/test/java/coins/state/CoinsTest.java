@@ -69,12 +69,11 @@ class CoinsTest {
 
     @Test
     void testFlip(){
-        assertNotEquals(state1,changeState());
-    }
+        Coins stateBefore = state1.clone();
+        state1.flip(state1.getCoins());
 
-    Coins changeState(){
-        state1.flip(new BitSet(1));
-        return state1;
+
+        assertEquals(state1,stateBefore);
     }
 
 }

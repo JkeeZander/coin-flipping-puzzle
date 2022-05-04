@@ -191,7 +191,6 @@ public class Coins implements Cloneable {
         System.out.println(coins);
         System.out.println(coins.getFlips());
 
-
         System.out.println(CombinatoricsUtils.binomialCoefficient(7,3)); //Usage of binomialCoefficient
     }
 
